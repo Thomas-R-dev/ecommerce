@@ -1,0 +1,63 @@
+div.row.test h1 {
+    text-align: center;
+}
+
+.menu-middle {
+    padding: auto;
+    border: 5px solid blue;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.ventes {
+    border: 5px solid blue;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.promo {
+    border: 2px solid black;
+    background-color: rgba(71, 252, 243, 0.568);
+    margin-right: 20%;
+    margin-left: 20%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+}
+
+.wrapper div {
+    border: 2px solid blueviolet;
+    background-color: rgba(71, 252, 243, 0.568);
+}
+
+.responsive1 {
+    max-width: 50%;
+    height: 50%;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.btnadd:first-child {
+    margin-bottom: 5px;
+}
+
+.btnadd {
+    width: 200px;
+    text-align: center;
+}
+
+.checked {
+    color: gold;
+}

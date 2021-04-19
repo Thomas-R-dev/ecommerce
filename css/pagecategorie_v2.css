@@ -1,0 +1,44 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+}
+
+.wrapper div {
+    border: 2px solid blueviolet;
+    background-color: rgba(243, 57, 181, 0.568);
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.btnadd {
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
+.checked {
+    color: gold;
+}
+
+.cat {
+    border: 2px solid purple;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 70px;
+}
+
+.touteslescat {
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+.ulcat {
+    text-align: left;
+    list-style: none;
+}

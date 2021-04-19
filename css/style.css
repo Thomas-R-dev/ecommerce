@@ -1,0 +1,159 @@
+body {
+    background-color: lightgray;
+}
+
+.login {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menudroit {
+    margin-right: 20px;
+}
+
+.navbar .navbar-nav>li>a:hover {
+    color: rgb(203, 241, 253);
+}
+
+.dropdown-item:hover {
+    background-color: blue;
+    color: white
+}
+
+.logo {
+    height: auto;
+    width: 15%;
+}
+
+.breadcrumb>li a {
+    text-transform: uppercase;
+}
+
+.panier {
+    font-size: 34px;
+    width: 34px;
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    color: #fff;
+}
+
+.panier div.panier_count {
+    position: absolute;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    top: 10px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: #f46036;
+    color: #fff;
+}
+
+.active {
+    color: darkturquoise !important;
+}
+
+
+/* Début fil d'Ariane */
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+
+
+/* Display list items side by side */
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+
+/* Add a slash symbol (/) before/behind each list item */
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+
+
+/* Add a color to all links inside the list */
+
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+
+/* Add a color on mouse-over */
+
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+
+/* Fin fil d'Ariane */
+
+
+/* Footer */
+
+footer {
+    margin-top: 10px;
+}
+
+.footer-link {
+    font-size: 150%;
+}
+
+.footer-link>a {
+    color: white !important;
+}
+
+.footer-copyright {
+    color: white;
+}
+
+
+/* Fin Footer */
+
+
+/* ordinateur,tablette allongée */
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: lightgray;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+
+/* téléphone */
+
+@media screen and (max-width: 649px) {
+    .footer {
+        font-size: 14px;
+    }
+    .footer .footer-left span,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-left .about {
+        text-align: justify;
+    }
+    .footer .footer-center i {
+        margin-left: 0;
+    }
+}

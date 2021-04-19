@@ -1,0 +1,475 @@
+        @charset "utf-8";
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+        html,
+        html a {
+            -webkit-font-smoothing: antialiased;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+        }
+        
+        body {
+            background-color: #fff;
+            color: #666;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 62.5%;
+            margin: 0 auto;
+        }
+        
+        #conteneur_logo {
+            display: flex;
+        }
+        
+        #logo {
+            width: 120px;
+            margin: auto;
+        }
+        
+        #conteneur_titre {
+            display: flex;
+        }
+        
+        #titre {
+            margin: auto;
+            text-align: center;
+            color: rgb(144, 144, 230);
+            font-size: 50px;
+            font-weight: bold;
+            text-decoration: underline;
+            text-shadow: rgb(255, 183, 50) 1px 1px, rgb(255, 183, 50) -1px 1px, rgb(255, 183, 50) -1px -1px, rgb(255, 183, 50) 1px -1px;
+        }
+        
+        #conteneur_img-panier {
+            border-top: 1px solid rgb(255, 183, 50);
+            border-bottom: 1px solid rgb(255, 183, 50);
+        }
+        
+        #img-panier {
+            width: 48px;
+            float: left;
+            margin-top: 1.625rem;
+            margin-bottom: 1.625rem;
+        }
+        
+        #p-panier {
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 1.625rem;
+        }
+        
+        a {
+            border: 0 none;
+            outline: 0;
+            text-decoration: none;
+        }
+        
+        strong {
+            font-weight: bold;
+        }
+        
+        p {
+            margin: 0.75rem 0 0;
+        }
+        
+        h2 {
+            font-size: 0.75rem;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+        }
+        
+        input,
+        button {
+            border: 0 none;
+            border-radius: 10px;
+            outline: 0 none;
+        }
+        
+        button {
+            background-color: rgb(255, 183, 50);
+            color: #fff;
+        }
+        
+        button:hover,
+        button:focus {
+            background-color: rgb(24, 187, 24);
+        }
+        
+        img,
+        .conteneur_codereduc,
+        .conteneur_labels,
+        .conteneur_article {
+            width: 100%;
+        }
+        
+        input,
+        .codereduc-btn,
+        .suppr,
+        .paiement-go,
+        .accueil-go,
+        .panier,
+        .conteneur_codereduc,
+        .conteneur_labels,
+        .article,
+        .prix,
+        .quantite,
+        .soustotal,
+        .conteneur_article,
+        .article-visuel,
+        .article-details {
+            float: left;
+        }
+        
+        .prix:before,
+        .soustotal:before,
+        .soustotal-valeur:before,
+        .total-valeur:before,
+        .reduc-valeur:before {
+            content: '€';
+        }
+        
+        .cache {
+            display: none;
+        }
+        
+        main {
+            clear: both;
+            font-size: 0.75rem;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 1rem 0;
+            width: 960px;
+        }
+        
+        .panier,
+        aside {
+            padding: 0 1rem;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .panier {
+            width: 70%;
+        }
+        
+        .conteneur_codereduc {
+            color: #111;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.3125rem;
+        }
+        
+        .codereduc-champ {
+            border: 1px solid rgb(144, 144, 230);
+            padding: 0.5rem;
+            text-transform: uppercase;
+            transition: all 0.2s linear;
+            width: 48%;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        }
+        
+        .codereduc-champ:hover,
+        .codereduc-champ:focus {
+            border: 1px solid rgb(255, 183, 50);
+        }
+        
+        .codereduc-btn {
+            border-radius: 4px;
+            font-size: 0.625rem;
+            margin-left: 0.625rem;
+            padding: 0.6875rem 1.25rem 0.625rem;
+        }
+        
+        .conteneur_labels {
+            border-top: 1px solid rgb(255, 183, 50);
+            border-bottom: 1px solid rgb(255, 183, 50);
+            margin-top: 1.625rem;
+        }
+        
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            color: #111;
+            display: inline-block;
+            padding: 0.625rem 0;
+        }
+        
+        li.prix:before,
+        li.soustotal:before {
+            content: '';
+        }
+        
+        .article {
+            width: 55%;
+        }
+        
+        .prix,
+        .quantite,
+        .soustotal {
+            width: 15%;
+        }
+        
+        .soustotal {
+            text-align: right;
+        }
+        
+        .suppr {
+            bottom: 1.125rem;
+            float: right;
+            position: absolute;
+            right: 0;
+            text-align: right;
+            width: 45%;
+        }
+        
+        .suppr button {
+            background-color: transparent;
+            color: rgb(144, 144, 230);
+            float: none;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+        
+        .suppr button:hover,
+        .suppr button:focus {
+            color: rgb(218, 34, 34);
+        }
+        
+        .article-label {
+            padding-left: 4.375rem;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .conteneur_article {
+            border-bottom: 1px solid rgb(255, 183, 50);
+            padding: 1rem 0;
+            position: relative;
+        }
+        
+        .article-visuel {
+            width: 35%;
+        }
+        
+        .article-details {
+            width: 65%;
+        }
+        
+        .article-image {
+            border: 1px solid #aaa;
+        }
+        
+        .article-details {
+            padding: 0 1.5rem;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .quantite-champ {
+            background-color: #ccc;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            font-size: 0.625rem;
+            padding: 2px;
+            width: 3.75rem;
+        }
+        
+        aside {
+            float: right;
+            position: relative;
+            width: 30%;
+        }
+        
+        .recap {
+            background-color: rgb(144, 144, 230);
+            border: 3px solid rgb(255, 183, 50);
+            border-radius: 25px;
+            padding: 1rem;
+            position: fixed;
+            width: 250px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .recap-total-articles {
+            color: white;
+            font-size: 0.875rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .recap-soustotal,
+        .recap-total {
+            border-top: 1px solid rgb(255, 183, 50);
+            border-bottom: 1px solid rgb(255, 183, 50);
+            clear: both;
+            margin: 1rem 0;
+            overflow: hidden;
+            padding: 0.5rem 0;
+        }
+        
+        .soustotal-titre,
+        .soustotal-valeur,
+        .total-titre,
+        .total-valeur,
+        .reduc-titre,
+        .reduc-valeur {
+            color: white;
+            float: left;
+            width: 50%;
+        }
+        
+        .total-valeur {
+            font-weight: bold;
+        }
+        
+        .recap-reduc {
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+        }
+        
+        .reduc-titre {
+            float: left;
+            width: 70%;
+        }
+        
+        .reduc-valeur {
+            color: white;
+            float: left;
+            text-align: right;
+            width: 30%;
+        }
+        
+        .recap-livraison {
+            padding-bottom: 3rem;
+        }
+        
+        .soustotal-valeur,
+        .total-valeur {
+            text-align: right;
+        }
+        
+        .total-titre {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .recap-paiement {
+            display: block;
+        }
+        
+        .recap-accueil {
+            display: block;
+        }
+        
+        .paiement-go {
+            display: block;
+            float: none;
+            font-size: 0.75rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 0.625rem 0;
+            width: 100%;
+        }
+        
+        .accueil-go {
+            display: block;
+            float: none;
+            font-size: 0.75rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 0.625rem 0;
+            width: 100%;
+            margin-top: 5px;
+        }
+        
+        .recap-livraison-choix {
+            background-color: #ccc;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            display: block;
+            font-size: 0.625rem;
+            height: 34px;
+            width: 100%;
+        }
+        
+        @media screen and (max-width: 640px) {
+            aside,
+            .panier,
+            .recap,
+            .article,
+            .suppr {
+                width: 100%;
+            }
+            .conteneur_labels {
+                display: none;
+            }
+            .conteneur_codereduc {
+                margin-bottom: 1rem;
+            }
+            .article {
+                margin-bottom: 1rem;
+            }
+            .article-visuel {
+                width: 40%;
+            }
+            .article-details {
+                width: 60%;
+            }
+            .prix,
+            .soustotal {
+                width: 33%;
+            }
+            .quantite {
+                text-align: center;
+                width: 34%;
+            }
+            .quantite-champ {
+                float: none;
+            }
+            .suppr {
+                bottom: 0;
+                text-align: left;
+                margin-top: 0.75rem;
+                position: relative;
+            }
+            .suppr button {
+                padding: 0;
+            }
+            .recap {
+                margin-top: 1.25rem;
+                position: relative;
+            }
+        }
+        
+        @media screen and (min-width: 641px) and (max-width: 960px) {
+            aside {
+                padding: 0 1rem 0 0;
+            }
+            .recap {
+                width: 28%;
+            }
+        }
+        
+        @media screen and (max-width: 960px) {
+            main {
+                width: 100%;
+            }
+            .article-details {
+                padding: 0 1rem;
+            }
+        }

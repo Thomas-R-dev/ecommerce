@@ -1,0 +1,55 @@
+.mb-4 {
+    border: 5px rgb(255, 183, 50) solid;
+    border-radius: 25px;
+    margin: auto;
+}
+
+.h1-responsive {
+    color: rgb(144, 144, 230);
+}
+
+.w-responsive {
+    color: grey;
+}
+
+.md-form {
+    margin-left: 10px;
+}
+
+.fas {
+    font-size: 50px;
+    color: rgb(144, 144, 230);
+}
+
+.far {
+    font-size: 15px;
+}
+
+.list-unstyled {
+    margin-top: -30px;
+}
+
+.coord {
+    font-style: italic;
+    color: grey;
+}
+
+/*Responsive*/
+
+@media screen and (min-width: 1024px){
+    .mb-4 {
+        width: 60%;
+    }
+}
+        
+@media screen and (min-width: 650px) and (max-width:1023px) {
+    .mb-4 {
+        width: 100%;
+    }
+}
+    
+@media screen and (max-width: 649px) {
+    .mb-4 {
+        width: 100%;
+    }
+}

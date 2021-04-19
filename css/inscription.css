@@ -1,0 +1,140 @@
+body {
+    background-image: url("../images/background_connexion.png");
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: center;
+}
+
+
+/*Logo du site*/
+
+#conteneur_logo {
+    display: flex;
+}
+
+#logo {
+    margin: auto;
+}
+
+
+/*Nom du site*/
+
+#conteneur_titre {
+    display: flex;
+}
+
+#titre {
+    margin: auto;
+    margin-bottom: 20px;
+    color: rgb(255, 183, 50);
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: rgb(144, 144, 230) 1px 1px, rgb(144, 144, 230) -1px 1px, rgb(144, 144, 230) -1px -1px, rgb(144, 144, 230) 1px -1px;
+}
+
+
+/*Formulaire d'inscription*/
+
+.container {
+    border: 5px rgb(144, 144, 230) solid;
+    border-radius: 25px;
+}
+
+.btn_center {
+    display: flex;
+    flex-direction: column;
+}
+
+#res1,
+#res2,
+#sub {
+    margin: auto;
+}
+
+#sub {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container_h2 {
+    color: orange;
+}
+
+.btn-primary:hover {
+    background-color: orange;
+}
+
+.navlink {
+    color: white;
+}
+
+.navlink:hover {
+    color: white;
+}
+
+.container_hr {
+    background-color: rgb(144, 144, 230);
+    height: 5px;
+}
+
+#oblig {
+    font-style: italic;
+}
+
+.error {
+    color: #FF0000;
+}
+
+
+/*Boutons de navigation*/
+
+.container2 {
+    display: flex;
+}
+
+.btn-group {
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+/*Mentions légales,etc*/
+
+#conteneur_mentions {
+    display: flex;
+}
+
+#mentions {
+    margin: auto;
+    margin-top: 20px;
+    font-style: italic;
+    color: grey;
+}
+
+
+/*Responsive*/
+
+@media screen and (min-width: 1024px) {
+    #logo {
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width:1023px) {
+    #logo {
+        width: 30%;
+    }
+    #titre {
+        font-size: 75px;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    #logo {
+        width: 50%;
+    }
+    #titre {
+        font-size: 50px;
+    }
+}
